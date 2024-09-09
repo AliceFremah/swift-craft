@@ -1,0 +1,45 @@
+<app-header></app-header>
+<div class="flex flex-row pt-16">
+  <div class="w-72 hidden lg:block">
+    <app-sidebar></app-sidebar>
+  </div>
+  <div class="flex-1 py-10 px-8 lg:px-12 bg-gray-100">
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-5">
+      <app-analytics-card
+        icon="assets/images/UsersFour.svg"
+        [title]="projectTitle"
+        [value]="projectValue"
+        [percentage]="projectPercentage"
+      ></app-analytics-card>
+      <app-analytics-card
+        icon="assets/images/UsersFour.svg"
+        [title]="serviceTitle"
+        [value]="serviceValue"
+        [percentage]="servicePercentage"
+      ></app-analytics-card>
+      <app-analytics-card
+        icon="assets/images/CalendarCheck.svg"
+        [title]="bookingTitle"
+        [value]="bookingValue"
+        [percentage]="bookingPercentage"
+        [isDecreased]="true"
+      ></app-analytics-card>
+      <app-analytics-card
+        icon="assets/images/CurrencyDollar.svg"
+        [title]="revenueTitle"
+        [value]="revenueValue"
+        [percentage]="revenuePercentage"
+        [isDecreased]="true"
+      ></app-analytics-card>
+    </div>
+
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+      <app-chart-card [options]="barChartOptions"></app-chart-card>
+      <app-chart-card [options]="doughnutChartOptions"></app-chart-card>
+      <app-chart-card
+        [options]="lineChartOptions"
+        class="lg:col-span-2"
+      ></app-chart-card>
+    </div>
+  </div>
+</div>

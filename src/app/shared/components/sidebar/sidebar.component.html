@@ -1,0 +1,90 @@
+<nav
+  class="bg-white shadow-sm text-gray-800 fixed h-screen w-72 flex flex-col justify-between"
+>
+  <div>
+    <ul class="space-y-1 p-4 flex-grow">
+      <li
+        class="py-3 px-4 rounded-lg flex items-center space-x-3 text-white bg-[#408EFD]"
+        routerLinkActive="active"
+      >
+        <img src="assets/images/dashboard_selected.svg" alt="Dashboard" />
+        <a routerLink="/dashboard">Dashboard</a>
+      </li>
+      <li
+        class="py-3 px-4 rounded-lg flex items-center space-x-3 hover:bg-gray-100"
+        routerLinkActive="active"
+      >
+        <img src="assets/images/File.svg" alt="Requests" />
+        <a routerLink="/requests">Requests</a>
+      </li>
+      <li
+        class="py-3 px-4 rounded-lg flex items-center space-x-3 hover:bg-gray-100"
+        routerLinkActive="active"
+      >
+        <img src="assets/images/Handshake.svg" alt="Projects" />
+        <a routerLink="/projects">Projects</a>
+      </li>
+      <li
+        class="py-3 px-4 rounded-lg flex items-center space-x-3 hover:bg-gray-100"
+        routerLinkActive="active"
+      >
+        <img src="assets/images/ClipboardText.svg" alt="Services" />
+        <a routerLink="/services">Services</a>
+      </li>
+      <li
+        class="py-3 px-4 rounded-lg flex items-center space-x-3 hover:bg-gray-100"
+        routerLinkActive="active"
+      >
+        <img src="assets/images/Clock.svg" alt="Scheduling" />
+        <a routerLink="/scheduling">Scheduling</a>
+      </li>
+      <li
+        class="py-3 px-4 rounded-lg flex items-center space-x-3 hover:bg-gray-100"
+        routerLinkActive="active"
+      >
+        <img src="assets/images/Calendar.svg" alt="Appointments" />
+        <a routerLink="/appointments">Appointments</a>
+      </li>
+    </ul>
+  </div>
+
+  <div class="flex-grow"></div>
+
+  <div class="mb-16">
+    <ul>
+      <li
+        class="py-3 px-4 rounded-lg flex items-center space-x-3 hover:bg-gray-100"
+      >
+        <img src="assets/images/Headset.svg" alt="Help & Support" />
+        <a routerLink="/help-support">Help & Support</a>
+      </li>
+      <li
+        class="py-3 px-4 rounded-lg flex items-center space-x-3 hover:bg-gray-100"
+      >
+        <img src="assets/images/settings.svg" alt="Settings" />
+        <a routerLink="/settings">Settings</a>
+      </li>
+    </ul>
+
+    <div class="p-4 border-t border-gray-100">
+      <div class="flex items-center space-x-3 justify-between">
+        <span class="flex items-center gap-3">
+          <img
+            src="assets/images/profile.svg"
+            alt="Profile"
+            class="w-9 h-9 rounded-full"
+          />
+          <div>
+            <p class="font-medium">Esthera Jackson</p>
+            <p class="text-sm text-gray-500">PRO</p>
+          </div>
+        </span>
+        <img
+          src="assets/images/logout.svg"
+          alt="Profile"
+          class="w-8 h-8 rounded-full"
+        />
+      </div>
+    </div>
+  </div>
+</nav>
